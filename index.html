@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,21 +13,25 @@
             font-family: Arial, Helvetica, sans-serif;
             margin: 0%;
         }
-        header{
+
+        header {
             padding: 20px;
             display: flex;
             align-items: center;
 
             border-bottom: 2px solid rgb(199, 199, 199);
         }
+
         nav ul {
             list-style-type: none;
-            
+
         }
+
         nav ul li {
             display: inline-block;
         }
-        nav a{
+
+        nav a {
             text-decoration: none;
             color: black;
             padding: 10px;
@@ -34,9 +39,10 @@
 
             display: block;
         }
+
         .move-right {
             margin-left: auto;
-            
+
         }
 
         footer {
@@ -54,15 +60,49 @@
             height: 30px;
             width: 30px;
         }
+
         footer a img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
+
         main {
-            background-color: lightgray;
-            padding: 10px;
+            background-color: white;
+            
         }
+
+        main .container {
+            display: flex;
+            border-bottom: 2px solid rgb(199, 199, 199);
+        }
+
+        main .container .right-block {
+            flex-basis: 50%;
+        }
+
+        main .container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        main .container .left-block {
+            flex-basis: 50%;
+            padding: 40px;
+        }
+
+        main .container .btn {
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 3px;
+            border: 1px solid gray;
+            text-align: center;
+            padding: 6px;
+            display: inline-block;
+        }
+
+     
+       
     </style>
 </head>
 
@@ -90,7 +130,62 @@
 
     <main>
         <!-- main content -->
-        Content
+        <div class="container">
+            <div class="left-block">
+                <h2>Let's hit a road</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit autem ratione quisquam dolorum
+                    repellendus provident vero quod cum omnis incidunt reiciendis cumque quis sequi, facere sed,
+                    dolorem,
+                    qui culpa excepturi?</p>
+                <p>
+                    <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</small>
+                </p>
+                <div class="btn">
+                    START
+                </div>
+            </div>
+            <div class="right-block">
+                <img src="Screenshot (3).png" alt="">
+            </div>
+        </div>
+        <!-- next block -->
+        <div class="container">
+            <div class="right-block">
+                <img src="Screenshot (4).png" alt="">
+            </div>
+            <div class="left-block">
+                <h2>Story</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit autem ratione quisquam dolorum
+                    repellendus provident vero quod cum omnis incidunt reiciendis cumque quis sequi, facere sed,
+                    dolorem,
+                    qui culpa excepturi?</p>
+                <p>
+                    <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</small>
+                </p>
+                <div class="btn">
+                    MORE
+                </div>
+            </div>
+        </div>
+        <!-- next block-->
+        <div class="container">
+            <div class="left-block">
+                <h2>Story</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit autem ratione quisquam dolorum
+                    repellendus provident vero quod cum omnis incidunt reiciendis cumque quis sequi, facere sed,
+                    dolorem,
+                    qui culpa excepturi?</p>
+                <p>
+                    <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</small>
+                </p>
+                <div class="btn">
+                    START
+                </div>
+            </div>
+            <div class="right-block">
+                <img src="Screenshot (5).png" alt="">
+            </div>
+        </div>
     </main>
 
 
