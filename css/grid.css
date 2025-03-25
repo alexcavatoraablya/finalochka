@@ -1,0 +1,16 @@
+.grid {
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   background-color: black;
+   gap: 1px;
+   margin: 40px;
+  }
+
+
+  .grid>div {
+   text-align: center;
+   padding: 30px;
+   padding-bottom: 10px;
+    background: white;
+  }

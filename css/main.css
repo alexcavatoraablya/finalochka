@@ -1,0 +1,34 @@
+main {
+    background-color: white;
+    
+}
+
+main .container {
+    display: flex;
+    border-bottom: 2px solid rgb(199, 199, 199);
+}
+
+main .container .right-block {
+    flex-basis: 50%;
+}
+
+main .container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .container .left-block {
+    flex-basis: 50%;
+    padding: 40px;
+}
+
+main .container .btn {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 3px;
+    border: 1px solid gray;
+    text-align: center;
+    padding: 6px;
+    display: inline-block;
+}
+

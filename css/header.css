@@ -1,0 +1,30 @@
+header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+
+    border-bottom: 2px solid rgb(199, 199, 199);
+}
+
+nav ul {
+    list-style-type: none;
+
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    margin: 0 10px;
+
+    display: block;
+}
+
+.move-right {
+    margin-left: auto;
+
+}
