@@ -26,13 +26,27 @@
             flex-grow: 1;
         }
 
-        form .column-3 input {
-            width: 100%;
-            margin: 5px 0;
+        form .column-3 {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
         }
 
         form {
-            margin: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        form .column-3 input {
+            width: 100%;
+            box-sizing: border-box;
+            margin: 5px 0;
+        }
+
+        form select {
+            width: 100%;
+            margin: 5px 0;
         }
 
     </style>
@@ -176,6 +190,37 @@
           <label for="message">Phone:
             <input type="tel" id="tel" name="tel">
           </label>
+        </div>
+
+        <div>
+            <label>Contact me via:</label>
+            <input type="radio" name="contact">
+            <label for="">Email</label>
+
+            <input type="radio" name="contact">
+            <label for="">Phone</label>
+
+            <input type="radio" name="contact">
+            <label for="">Telegram</label>
+        </div>
+
+        <div>
+            <label>Topic:<br>
+                <select>
+                    <option value="1">Post my story</option>
+                    <option value="2">Suggest an idea</option>
+                    <option value="3">Say something</option>
+                </select>
+            </label>
+
+            <label>Message:<br>
+                <textarea cols="125" rows="10"></textarea>
+
+        </div>
+
+        <div>
+            <input type="radio">
+            <label for="">I am a human</label>
         </div>
     </form>
 
