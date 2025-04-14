@@ -20,22 +20,18 @@
             display: flex;
             justify-content: space-between;
             gap: 20px;
+            
         }
 
         form .column-3>* {
             flex-grow: 1;
         }
 
-        form .column-3 {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
         form {
             display: flex;
             flex-direction: column;
             gap: 10px;
+            padding: 55px;
         }
 
         form .column-3 input {
@@ -47,6 +43,11 @@
         form select {
             width: 100%;
             margin: 5px 0;
+        }
+
+        form textarea {
+            box-sizing: border-box;
+            width: 100%;
         }
 
     </style>
@@ -213,9 +214,12 @@
                 </select>
             </label>
 
+            
+        </div>
+        <div>
             <label>Message:<br>
                 <textarea cols="125" rows="10"></textarea>
-
+            </label>
         </div>
 
         <div>
