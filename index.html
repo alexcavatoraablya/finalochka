@@ -14,13 +14,14 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/general.css">
 
-    <style>
 
+
+    <style>
         form .column-3 {
             display: flex;
             justify-content: space-between;
             gap: 20px;
-            
+
         }
 
         form .column-3>* {
@@ -50,6 +51,26 @@
             width: 100%;
         }
 
+        @media (min-width: 600px) and (max-width: 850px) {
+            .move-right {
+                display: none;
+            }
+
+            main .container .right-block,
+            main .container .left-block {
+                flex-basis: 50%;
+            }
+
+            .gallery img {
+                display: none;
+                flex-basis: 50%;
+            }
+
+            .gallery img:nth-child(1),
+            .gallery img:nth-child(2) {
+                display: block;
+            }
+        }
     </style>
 </head>
 
@@ -182,15 +203,15 @@
     <h2>Write to us</h2>
     <form>
         <div class="column-3">
-          <label for="name">Name:
-            <input type="text" id="name" name="name">
-          </label>
-          <label for="email">Email:
-            <input type="email" id="email" name="email">
-          </label>
-          <label for="message">Phone:
-            <input type="tel" id="tel" name="tel">
-          </label>
+            <label for="name">Name:
+                <input type="text" id="name" name="name">
+            </label>
+            <label for="email">Email:
+                <input type="email" id="email" name="email">
+            </label>
+            <label for="message">Phone:
+                <input type="tel" id="tel" name="tel">
+            </label>
         </div>
 
         <div>
@@ -214,7 +235,7 @@
                 </select>
             </label>
 
-            
+
         </div>
         <div>
             <label>Message:<br>
