@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tea Shop</title>
+</head>
+<body>
+    <style>
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+}
+h2 {
+    text-align: center;
+}
+
+        header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+
+    border-bottom: 2px solid rgb(199, 199, 199);
+}
+
+nav ul {
+    list-style-type: none;
+
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    margin: 0 10px;
+
+    display: block;
+}
+
+.move-right {
+    margin-left: auto;
+
+}
+    </style>
+
+
+<header>
+    <h2>Tour-Guide</h2>
+    <nav>
+        <ul>
+            <li><a href="buy.php">Buy</a></li>
+            <li><a href="gallery.php">Gallery</a></li>
+            <li><a href="features.php">Features</a></li>
+            <li><a href="write-to-us.php">Write to us</a></li>
+        </ul>
+    </nav>
+    <nav class="move-right">
+        <ul>
+            <li><a href="./images/twitter.php"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="./images/facebook.php"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="./images/instagram.php"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="./images/youtube.php"><i class="bi bi-youtube"></i></a></li>
+            <li><a href="./images/email.php"><i class="bi bi-envelope"></i></a></li>
+        </ul>
+    </nav>
+</header>
+</body>
+</html>
